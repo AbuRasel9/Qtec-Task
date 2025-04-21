@@ -1,19 +1,15 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:task/bloc/login_bloc/auth_bloc.dart';
+import 'package:task/repository/movies_api/product_repository.dart';
+import 'package:task/repository/movies_api/product_repository_impl.dart';
 
+import 'bloc/productBloc/product_bloc.dart';
 import 'configs/routes/routes.dart';
 import 'configs/routes/routes_name.dart';
 import 'configs/theme/app_theme_data.dart';
-import 'package:firebase_core/firebase_core.dart';
-import 'firebase_options.dart';
 void main()async {
-  WidgetsFlutterBinding.ensureInitialized();
 
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
 
   runApp(const MyApp()); // Running the application
 }
@@ -26,7 +22,7 @@ class MyApp extends StatelessWidget {
     return  MultiBlocProvider(
 
       providers: [
-        BlocProvider(create: (context) => AuthBloc(),),
+        BlocProvider(create: (context) => ProductBloc(productRepository: ProductRepositoryImpl()),)
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
@@ -34,7 +30,7 @@ class MyApp extends StatelessWidget {
         theme: AppThemeData.lightThemeData, // Setting light theme
         darkTheme: AppThemeData.darkThemeData, // Setting dark theme      title: 'task',
 
-        initialRoute: RoutesName.splash, // Initial route
+        initialRoute: RoutesName.home, // Initial route
         onGenerateRoute: Routes.generateRoute, // Generating routes
       ),
     );
