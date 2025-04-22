@@ -2,7 +2,7 @@
 
 A Flutter application showcasing products with search and sort functionality, built using BLoC pattern for state management.
 
-![App Screenshot](image_1.jpg)
+![image 1](https://github.com/user-attachments/assets/ae231403-83b8-472d-9785-910f2e3fc4c3)
 
 ## ✨ Features
 
