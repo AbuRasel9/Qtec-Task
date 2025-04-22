@@ -2,41 +2,7 @@
 
 A Flutter application showcasing products with search and sort functionality, built using BLoC pattern for state management.
 
-![image 1](https://github.com/user-attachments/assets/ae231403-83b8-472d-9785-910f2e3fc4c3)
+ <img src="image_3.jpg" width="250" /> | <img src="[image_2.jpg](https://github.com/user-attachments/assets/ae231403-83b8-472d-9785-910f2e3fc4c3)" width="400" /> |
 
-## ✨ Features
 
-- **Product Grid View** - Beautifully displayed products with images and details
-- **Search Functionality** - Find products instantly with real-time search
-- **Multiple Sort Options** - Sort by Price (High/Low) and Rating
-- **Responsive Design** - Works on various screen sizes
-- **Clean UI** - Modern card-based layout with clear product information
 
-## 📱 Screenshots
-
-| ![Product Listing](image_1.jpg) | ![Sort Options](image_4.jpg) |
-|--------------------------------|-----------------------------|
-| *Main Product View*            | *Sorting Options*           |
-
-| ![Price Sort](image_3.jpg)     | ![No Results](image_6.jpg)  |
-|-------------------------------|----------------------------|
-| *Sorted by Price Low-High*    | *No Results Found*         |
-
-## 🛠️ Tech Stack
-
-- **Flutter** - Cross-platform framework
-- **BLoC Pattern** - State management
-- **Dart** - Programming language
-- **Equatable** - Value equality
-
-## 🚀 Getting Started
-
-### Prerequisites
-- Flutter SDK (latest stable version)
-- Dart SDK
-- Android Studio/VSCode with Flutter plugins
-
-### Installation
-1. Clone the repository
-   ```sh
-   git clone https://github.com/your-username/ecommerce-product-app.git
