@@ -1,14 +1,7 @@
-// To parse this JSON data, do
-//
-//     final productData = productDataFromJson(jsonString);
 
-import 'dart:convert';
+import 'package:task/utils/filter.dart';
 
-List<ProductData> productDataFromJson(String str) => List<ProductData>.from(json.decode(str).map((x) => ProductData.fromJson(x)));
-
-String productDataToJson(List<ProductData> data) => json.encode(List<dynamic>.from(data.map((x) => x.toJson())));
-
-class ProductData {
+class ProductData extends Filter{
   int? id;
   String? title;
   double? price;
@@ -65,6 +58,11 @@ class ProductData {
     "image": image,
     "rating": rating?.toJson(),
   };
+
+  @override
+  String getKey() {
+   return "$title";
+  }
 }
 
 class Rating {

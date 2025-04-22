@@ -1,5 +1,12 @@
 import 'package:equatable/equatable.dart';
 
+enum SortOption {
+  priceHighToLow,
+  priceLowToHigh,
+  rating,
+  initial
+}
+
 abstract class ProductEvent extends Equatable {
   const ProductEvent();
 
@@ -16,4 +23,13 @@ class SearchProductEvent extends ProductEvent {
 
   @override
   List<Object?> get props => [searchValue];
+}
+
+class SortProductEvent extends ProductEvent {
+  final SortOption sortOption;
+
+  const SortProductEvent({required this.sortOption});
+
+  @override
+  List<Object?> get props => [sortOption];
 }

@@ -68,34 +68,34 @@ class AppThemeData {
     inputDecorationTheme: InputDecorationTheme(
       isDense: true,
       hintStyle: AppTextThemes.lightTextTheme.bodyMedium?.copyWith(
-        color: AppColorSchemes.lightColorScheme.outline.withOpacity(0.7),
+        color: AppColorSchemes.lightColorScheme.outline.withOpacity(0.5),
       ),
       errorStyle: AppTextThemes.lightTextTheme.labelMedium?.copyWith(
         color: AppColorSchemes.lightColorScheme.error,
       ),
-      border: UnderlineInputBorder(
-        borderRadius: BorderRadius.circular(0),
+      border: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(10),
         borderSide: BorderSide(
 
-          color: AppColorSchemes.lightColorScheme.outline.withOpacity(0.7),
+          color: AppColorSchemes.lightColorScheme.outline.withOpacity(0.5),
         ),
       ),
-      enabledBorder: UnderlineInputBorder(
-        borderRadius: BorderRadius.circular(0),
+      enabledBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(10),
         borderSide: BorderSide(
-          color: AppColorSchemes.lightColorScheme.outline.withOpacity(0.7),
+          color: AppColorSchemes.lightColorScheme.outline.withOpacity(0.5),
         ),
       ),
-      disabledBorder: UnderlineInputBorder(
-        borderRadius: BorderRadius.circular(0),
-        borderSide: BorderSide(color: AppColorSchemes.lightColorScheme.outline.withOpacity(0.7)),
+      disabledBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(10),
+        borderSide: BorderSide(color: AppColorSchemes.lightColorScheme.outline.withOpacity(.5)),
       ),
-      focusedBorder: UnderlineInputBorder(
-        borderRadius: BorderRadius.circular(0),
-        borderSide: BorderSide(color: AppColorSchemes.lightColorScheme.primary),
+      focusedBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(10),
+        borderSide: BorderSide(color: AppColorSchemes.lightColorScheme.outline ),
       ),
-      errorBorder: UnderlineInputBorder(
-        borderRadius: BorderRadius.circular(0),
+      errorBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(10),
         borderSide: BorderSide(color: AppColorSchemes.lightColorScheme.error),
       ),
       contentPadding: const EdgeInsets.symmetric(vertical: 14, horizontal: 0),
