@@ -55,7 +55,7 @@ class ProductBloc extends Bloc<ProductEvent, ProductState> {
       ));
     }
   }
-
+//sorting product
   void _sortProducts(SortProductEvent event, Emitter<ProductState> emit) {
     if (state.productList.isEmpty) return;
 

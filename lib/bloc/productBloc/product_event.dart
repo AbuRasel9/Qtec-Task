@@ -13,9 +13,9 @@ abstract class ProductEvent extends Equatable {
   @override
   List<Object?> get props => [];
 }
-
+//get product form api
 class GetProductEvent extends ProductEvent {}
-
+//search product
 class SearchProductEvent extends ProductEvent {
   final String searchValue;
 
@@ -24,7 +24,7 @@ class SearchProductEvent extends ProductEvent {
   @override
   List<Object?> get props => [searchValue];
 }
-
+//sort product
 class SortProductEvent extends ProductEvent {
   final SortOption sortOption;
 

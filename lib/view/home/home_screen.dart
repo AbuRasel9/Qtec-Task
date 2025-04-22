@@ -72,10 +72,12 @@ class _HomeScreenState extends State<HomeScreen> {
                       case ProductStatus.loading:
                         return const Center(child: CircularProgressIndicator());
                       case ProductStatus.success:
+                        //if porduct is empty than show this text
                         return state.productList.isEmpty
                             ? const Center(
                                 child: Text("No Data Found"),
                               )
+                        //grid view
                             : GridView.builder(
                                 gridDelegate:
                                     const SliverGridDelegateWithFixedCrossAxisCount(
@@ -87,6 +89,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                 itemCount: state.productList.length,
                                 itemBuilder: (context, index) {
                                   final product = state.productList[index];
+
+                                  //product card item
                                   return  ProductCard(
                                     product: product,
                                     isFavourite: index.isEven,

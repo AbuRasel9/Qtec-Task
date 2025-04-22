@@ -64,6 +64,7 @@ class ProductCard extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(width: 8),
+                    //product percentage
                     Text(
                       '\$${(product.price! * (1 + discountPercentage / 100)).toStringAsFixed(2)}',
                       style: theme.textTheme.labelMedium?.copyWith(
@@ -72,6 +73,7 @@ class ProductCard extends StatelessWidget {
                       ),
                     ),
                     const Spacer(),
+                    //offer text
                     Container(
                       padding: const EdgeInsets.symmetric(
                           horizontal: 4, vertical: 2),
@@ -133,9 +135,9 @@ class ProductCard extends StatelessWidget {
             top: -4,
             right: -5,
             child: IconButton(
-          /*    style: IconButton.styleFrom(
+              style: IconButton.styleFrom(
                 backgroundColor: Colors.white,
-              ),*/
+              ),
               icon: Icon(
                 isFavourite ? Icons.favorite : Icons.favorite_border,
                 color: isFavourite
